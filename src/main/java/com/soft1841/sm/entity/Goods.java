@@ -11,4 +11,7 @@ public class Goods {
     private final SimpleDoubleProperty price =new SimpleDoubleProperty();
     private final SimpleStringProperty piture = new SimpleStringProperty("");
     private final SimpleStringProperty description = new SimpleStringProperty("");
+
+    public Goods() {
+    }
 }
