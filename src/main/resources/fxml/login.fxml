@@ -1,76 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.text.*?>
-<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="fxml.Login"
+            prefHeight="400.0" prefWidth="600.0">
 
-<AnchorPane prefHeight="490.0"
-        prefWidth="785.0"
-        xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
-        fx:controller="com.soft1841.sm.controller.LoginController">
-    <children>
-        <ImageView
-                fitHeight="499.0"
-                fitWidth="782.0"
-                layoutX="2.0"
-                pickOnBounds="true"
-                preserveRatio="true">
-            <image>
-                <Image url="/img/background.jpg" />
-            </image>
-        </ImageView>
-        <TextField fx:id="accountField" layoutX="310.0" layoutY="208.0" opacity="0.82" />
-        <PasswordField fx:id="passwordField" layoutX="310.0" layoutY="136.0" opacity="0.82" />
-        <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="209.0"
-                   layoutY="170.0" pickOnBounds="true" preserveRatio="true" />
-        <ImageView fitHeight="30.0" fitWidth="38.0" layoutX="242.0"
-                   layoutY="208.0" pickOnBounds="true" preserveRatio="true">
-            <image>
-                <Image url="/img/3.png" />
-            </image>
-        </ImageView>
-        <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="238.0" layoutY="136.0"
-                   pickOnBounds="true" preserveRatio="true">
-            <image>
-                <Image url="/img/2.png" />
-            </image>
-        </ImageView>
-        <Button
-                layoutX="337.0"
-                layoutY="271.0"
-                mnemonicParsing="false"
-                opacity="0.82"
-                prefHeight="44.0"
-                prefWidth="141.0"
-                text="登录" onAction="#login"
-        />
-        <Label layoutX="310.0" layoutY="49.0" opacity="0.82"
-               prefHeight="61.0" prefWidth="195.0" text="欢迎登录">
-            <font>
-                <Font size="48.0" />
-            </font>
-        </Label>
-        <Label layoutX="348.0" layoutY="363.0"
-               opacity="0.82" text="其他登录方式" />
-        <ImageView fitHeight="53.0" fitWidth="61.0"
-                   layoutX="362.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true">
-            <image>
-                <Image url="/img/wechat.png" />
-            </image>
-        </ImageView>
-        <ImageView fitHeight="53.0" fitWidth="61.0" layoutX="227.0" layoutY="404.0"
-                   pickOnBounds="true" preserveRatio="true">
-            <image>
-                <Image url="/img/QQ.png" />
-            </image>
-        </ImageView>
-        <ImageView fitHeight="53.0" fitWidth="61.0" layoutX="496.0" layoutY="404.0"
-                   pickOnBounds="true" preserveRatio="true">
-            <image>
-                <Image url="/img/facebook.png" />
-            </image>
-        </ImageView>
-    </children>
 </AnchorPane>
