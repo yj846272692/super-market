@@ -1,8 +1,5 @@
 package com.soft1841.sm.entity;
 
-<<<<<<< HEAD
-public class Receipt {
-=======
 import java.util.Date;
 
 public class Receipt {
@@ -62,5 +59,4 @@ public class Receipt {
                 ", money=" + money +
                 '}';
     }
->>>>>>> origin/master
 }
