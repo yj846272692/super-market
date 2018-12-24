@@ -3,11 +3,22 @@ package com.soft1841.sm.entity;
 import java.util.Date;
 
 public class Receipt {
-    private  Long id ;
-    private  Long cashier_id;
-    private  Long vip_id ;
-    private Date time ;
-    private  double money ;
+    private Long id;
+    private Long cashierId;
+    private Long vipId;
+    private Date time;
+    private double money;
+
+    public Receipt() {
+    }
+
+    public Receipt(Long id, Long cashierId, Long vipId, Date time, double money) {
+        this.id = id;
+        this.cashierId = cashierId;
+        this.vipId = vipId;
+        this.time = time;
+        this.money = money;
+    }
 
     public Long getId() {
         return id;
@@ -17,20 +28,20 @@ public class Receipt {
         this.id = id;
     }
 
-    public Long getCashier_id() {
-        return cashier_id;
+    public Long getCashierId() {
+        return cashierId;
     }
 
-    public void setCashier_id(Long cashier_id) {
-        this.cashier_id = cashier_id;
+    public void setCashierId(Long cashierId) {
+        this.cashierId = cashierId;
     }
 
-    public Long getVip_id() {
-        return vip_id;
+    public Long getVipId() {
+        return vipId;
     }
 
-    public void setVip_id(Long vip_id) {
-        this.vip_id = vip_id;
+    public void setVipId(Long vipId) {
+        this.vipId = vipId;
     }
 
     public Date getTime() {
@@ -53,8 +64,8 @@ public class Receipt {
     public String toString() {
         return "Receipt{" +
                 "id=" + id +
-                ", cashier_id=" + cashier_id +
-                ", vip_id=" + vip_id +
+                ", cashierId=" + cashierId +
+                ", vipId=" + vipId +
                 ", time=" + time +
                 ", money=" + money +
                 '}';
