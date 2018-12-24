@@ -10,19 +10,19 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * 小票的实体类
+ *
  */
 
 public class ReceiptDAOImpl implements ReceiptDAO {
     @Override
-    public Long insertReceipt(Receipt receipt) throws SQLException {
-        return Db.use().insertForGeneratedKey(
-                Entity.create("t_receipt")
-                .set("cashier_id",receipt.getCashier_id())
-                .set("vip_id",receipt.getVip_id())
-                .set("time",receipt.getTime())
-                .set("money",receipt.getMoney())
-        );
+        public Long insertReceipt(Receipt receipt) throws SQLException {
+            return Db.use().insertForGeneratedKey(
+                    Entity.create("t_receipt")
+                            .set("cashier_id",receipt.getCashier_id())
+                            .set("vip_id",receipt.getVip_id())
+                            .set("time",receipt.getTime())
+                            .set("money",receipt.getMoney())
+            );
     }
 
     @Override
