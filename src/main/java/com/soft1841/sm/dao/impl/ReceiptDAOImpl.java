@@ -10,7 +10,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * 小票的实体类
+ * 小票的实现类
  */
 
 public class ReceiptDAOImpl implements ReceiptDAO {
