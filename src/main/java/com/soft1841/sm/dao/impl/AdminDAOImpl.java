@@ -26,7 +26,7 @@ public class AdminDAOImpl implements AdminDAO {
         return Db.use().insertForGeneratedKey(
                 Entity.create("t_admin")
                 .set("name",admin.getName())
-                .set("admin_number",admin.getAdmin_number())
+                .set("admin_number",admin.getAdminNumber())
         );
     }
 }

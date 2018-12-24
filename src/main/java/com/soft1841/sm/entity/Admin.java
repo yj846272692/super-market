@@ -3,7 +3,16 @@ package com.soft1841.sm.entity;
 public class Admin {
     private Long id ;
     private String name ;
-    private String admin_number ;
+    private String adminNumber ;
+
+    public Admin() {
+    }
+
+    public Admin(Long id, String name, String adminNumber) {
+        this.id = id;
+        this.name = name;
+        this.adminNumber = adminNumber;
+    }
 
     public Long getId() {
         return id;
@@ -21,11 +30,20 @@ public class Admin {
         this.name = name;
     }
 
-    public String getAdmin_number() {
-        return admin_number;
+    public String getAdminNumber() {
+        return adminNumber;
     }
 
-    public void setAdmin_number(String admin_number) {
-        this.admin_number = admin_number;
+    public void setAdminNumber(String adminNumber) {
+        this.adminNumber = adminNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "Admin{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", adminNumber='" + adminNumber + '\'' +
+                '}';
     }
 }

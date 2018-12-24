@@ -18,8 +18,8 @@ public class ReceiptDAOImpl implements ReceiptDAO {
     public Long insertReceipt(Receipt receipt) throws SQLException {
         return Db.use().insertForGeneratedKey(
                 Entity.create("t_receipt")
-                .set("cashier_id",receipt.getCashier_id())
-                .set("vip_id",receipt.getVip_id())
+                .set("cashier_id",receipt.getCashierId())
+                .set("vip_id",receipt.getVipId())
                 .set("time",receipt.getTime())
                 .set("money",receipt.getMoney())
         );
