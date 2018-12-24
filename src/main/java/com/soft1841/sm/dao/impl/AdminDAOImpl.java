@@ -6,27 +6,20 @@ import com.soft1841.sm.dao.AdminDAO;
 import com.soft1841.sm.entity.Admin;
 
 import java.sql.SQLException;
-import java.util.List;
+
 
 public class AdminDAOImpl implements AdminDAO {
-    @Override
-    public List<Entity> selectAdmin() throws Exception {
-        return Db.use().query("SELECT * FROM t_admin");
-    }
 
     @Override
-    public int deleteAmId(long id) throws Exception {
-        return Db.use().del(
-                Entity.create("t_admin").set("id",id)
-        );
+    public Admin getAdminByNumber(String adminNumber) throws SQLException {
+        Entity entity =  Db.use().queryOne("SELECT * FROM t_admin WHERE adminnumber = ? ",adminNumber );
+        return convertAdmin(entity);
     }
 
-    @Override
-    public long insertAdmin(Admin admin) throws SQLException {
-        return Db.use().insertForGeneratedKey(
-                Entity.create("t_admin")
-                .set("name",admin.getName())
-                .set("admin_number",admin.getAdminNumber())
-        );
+    private Admin convertAdmin(Entity entity) {
+        Admin admin =  new Admin(entity.getLong("id"),entity.getStr("name"),
+                entity.getStr("adminnumber"),entity.getStr("password"));
+       return admin;
+
     }
 }
