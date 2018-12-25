@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.soft1841.sm.controller.TypeConller"
+            AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="10" AnchorPane.bottomAnchor="10"  >
+    <AnchorPane AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="10" AnchorPane.bottomAnchor="10"  >
+        <children >
+            <Accordion   />
+            <ImageView fitHeight="1200" fitWidth="2000">
+            <Image url="/img/1.jpg"  />
+          </ImageView>
+
+            <Label  AnchorPane.leftAnchor="800" AnchorPane.rightAnchor="600" AnchorPane.topAnchor="5" AnchorPane.bottomAnchor="900" text="商品进货">
+                <font>
+                    <Font size="60.0" />
+                </font>
+            </Label>
+            <Button  styleClass="menubig-btn" AnchorPane.leftAnchor="19 " AnchorPane.rightAnchor="1600" AnchorPane.topAnchor="20" mnemonicParsing="false" prefHeight="45.0" prefWidth="108.0" text="返回" />
+            <AnchorPane styleClass="gray-theme" AnchorPane.topAnchor="140" AnchorPane.bottomAnchor="50" AnchorPane.rightAnchor="60" AnchorPane.leftAnchor="270">
+
+                <HBox AnchorPane.topAnchor="20" AnchorPane.leftAnchor="20" spacing="180" >
+                    <Button  styleClass="menub-btn" alignment="CENTER"   text="本月销售量" />
+                    <Button styleClass="menub-btn" alignment="CENTER"   text="产品存量" />
+                    <Button styleClass="menub-btn" alignment="CENTER"  text="进价">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Button>
+                    <Button styleClass="menub-btn" alignment="CENTER" AnchorPane.leftAnchor="940" AnchorPane.rightAnchor="500" text="预售额" />
+                    <Button styleClass="menub-btn" alignment="CENTER" AnchorPane.leftAnchor="1400" AnchorPane.rightAnchor="100" text="利润" />
+                </HBox>
+
+            </AnchorPane>
+            <AnchorPane AnchorPane.topAnchor="150" AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="100" AnchorPane.bottomAnchor="50">
+                <VBox  spacing="70">
+                    <Button styleClass="menuw-btn" alignment="CENTER" prefHeight="45.0" prefWidth="108.0" text="品牌服饰" />
+                    <Button styleClass="menuw-btn" alignment="CENTER"  prefHeight="45.0" prefWidth="108.0" text="日常百货" />
+                    <Button styleClass="menuw-btn" alignment="CENTER"  prefHeight="45.0" prefWidth="108.0" text="美妙零食" />
+                    <Button styleClass="menuw-btn" alignment="CENTER" prefHeight="45.0" prefWidth="108.0" text="雪糕饮品" />
+                    <Button styleClass="menuw-btn" alignment="CENTER" prefHeight="45.0" prefWidth="108.0" text="名贵烟酒" />
+                    <Button styleClass="menuw-btn" alignment="CENTER"  prefHeight="45.0" prefWidth="108.0" text="美味熟食" />
+                    <Button styleClass="menuw-btn" alignment="CENTER"  prefHeight="69.0" prefWidth="108.0" text="高档首饰" />
+                </VBox>
+
+            </AnchorPane>
+
+        </children>
+    </AnchorPane>
+
+</AnchorPane>
