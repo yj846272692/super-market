@@ -7,10 +7,10 @@
 
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.image.Image?>
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="748.0" prefWidth="1102.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
-   <ImageView>
-       <Image url="/img/dahai.jpg"/>
-   </ImageView>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="748.0" prefWidth="1102.0" xmlns="http://javafx.com/javafx/8" >
+    <ImageView>
+        <Image url="/img/dahai.jpg"/>
+    </ImageView>
     <children>
         <Label styleClass="radio-button" layoutX="201.0" layoutY="42.0" prefHeight="143.0" prefWidth="701.0" text="晨光超市欢迎您" textFill="#1a4744d6">
             <font>

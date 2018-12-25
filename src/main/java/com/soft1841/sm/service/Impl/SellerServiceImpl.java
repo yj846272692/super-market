@@ -14,6 +14,8 @@ public class SellerServiceImpl implements SellerService {
         Seller seller = null;
         try {
             seller = sellerDAO.getSellerByNumber(number);
+            //！
+            System.out.println(seller.getPassword());
         } catch (SQLException e) {
             e.printStackTrace();
         }

@@ -17,7 +17,7 @@ public class SellerDAOImpl implements SellerDAO {
 
     private Seller convertSeller(Entity entity){
         Seller seller = new Seller(entity.getLong("id"),entity.getStr("number"),
-                entity.getStr("password"),entity.getStr("name"),entity.getStr("avatar"));
+                entity.getStr("name"),entity.getStr("password"),entity.getStr("avatar"));
         return  seller;
     }
 }
