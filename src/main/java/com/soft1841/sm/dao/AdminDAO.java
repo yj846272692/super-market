@@ -10,6 +10,7 @@ public interface AdminDAO {
     /**
      * 根据工号查询收银员
      * @param adminNumber
+     *
      * @return
      * @throws SQLException
      */
