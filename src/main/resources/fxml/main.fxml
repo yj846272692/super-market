@@ -42,7 +42,7 @@
                         <TitledPane alignment="TOP_LEFT" text="商品管理">
                             <VBox minHeight="100" spacing="10" >
                                 <Button  text="商品类别" onAction="#listType"/>
-                                <Button  text="商品信息" />
+                                <Button  text="商品信息" onAction="#listGoods" />
                             </VBox>
                         </TitledPane>
                         <TitledPane alignment="TOP_LEFT" text="员工管理">

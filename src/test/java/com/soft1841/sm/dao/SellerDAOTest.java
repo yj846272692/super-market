@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import java.sql.SQLException;
 
-import static org.junit.Assert.*;
+
 
 public class SellerDAOTest {
     private SellerDAO sellerDAO = DAOFactory.getSellerDAOInstance();

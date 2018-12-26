@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 public class SellerApp extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
-        primaryStage.setTitle("Login");
+        primaryStage.setTitle("收银员登录");
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/seller.fxml"));
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root);

@@ -22,7 +22,7 @@
     <Label text="用 户 名" AnchorPane.topAnchor="200" AnchorPane.leftAnchor="80"/>
     <TextField promptText="admin" fx:id="user" AnchorPane.topAnchor="200" AnchorPane.leftAnchor="170"/>
     <Label text="密     码" AnchorPane.topAnchor="255" AnchorPane.leftAnchor="80"/>
-    <TextField promptText="password" fx:id="password" AnchorPane.topAnchor="250" AnchorPane.leftAnchor="170"/>
+    <PasswordField promptText="password" fx:id="password" AnchorPane.topAnchor="250" AnchorPane.leftAnchor="170"/>
     <Button text="登      录"  onAction="#adminLogin" AnchorPane.topAnchor="330"
             AnchorPane.leftAnchor="180" fx:id="01"/>
     <Label text="忘记密码?" fx:id="03" AnchorPane.topAnchor="380" AnchorPane.leftAnchor="440"/>
