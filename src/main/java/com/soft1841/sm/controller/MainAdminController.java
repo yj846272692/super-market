@@ -22,6 +22,9 @@ public class MainAdminController implements Initializable {
     public void listType() throws Exception {
         switchView("type.fxml");
     }
+    public  void listGoods() throws  Exception{
+        switchView("goods.fxml");
+    }
     private void switchView(String fileName) throws Exception {
         //清除主面板之前内容
         ObservableList<Node> list = mainContainer.getChildren();

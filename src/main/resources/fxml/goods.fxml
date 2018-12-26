@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.soft1841.sm.controller.GoodsController">
+    <HBox alignment="BOTTOM_CENTER" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10" spacing="10">
+        <Button styleClass="btn-basic,btn-radius-large,green-theme" text="添加商品" onAction="#newGoodsStage"/>
+        <Button styleClass="btn-basic,btn-radius-large,blue-theme" text="导出数据"/>
+    </HBox>
+    <HBox alignment="CENTER" AnchorPane.topAnchor="60" AnchorPane.leftAnchor="10" spacing="10">
+        <ComboBox promptText="选择商品类别" fx:id="typeComboBox" prefWidth="600"/>
+        <TextField promptText="请输入关键词" fx:id="keywordsField" AnchorPane.leftAnchor="800"/>
+        <Button styleClass="btn-basic,btn-radius-normal,green-theme,btn-radius-large" text="搜索" onAction="#search" fx:id="09"/>
+    </HBox>
+    <TableView fx:id="goodsTable" prefWidth="1000"
+               AnchorPane.topAnchor="110" AnchorPane.leftAnchor="10">
+        <columns>
+            <TableColumn text="ID">
+                <cellValueFactory>
+                    <PropertyValueFactory property="id"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="商品名">
+                <cellValueFactory>
+                    <PropertyValueFactory property="name"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="条码">
+                <cellValueFactory>
+                    <PropertyValueFactory property="barCode"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="价格">
+                <cellValueFactory>
+                    <PropertyValueFactory property="price"/>
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+
+
+</AnchorPane>

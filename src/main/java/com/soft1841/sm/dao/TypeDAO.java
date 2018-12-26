@@ -5,16 +5,14 @@ import com.soft1841.sm.entity.Type;
 
 import java.sql.SQLException;
 import java.util.List;
+/**
+ * 图书类别DAO接口
+ * @author 杨晶
+ */
 
 public interface TypeDAO {
-   /**
-    * 查询所有类别
-    * @return
-    */
-     List<Entity> selectAllTypes() throws SQLException;
-
     /**
-     * 新增图书类别, 返回Long
+     * 新增图书类别, 返回自增主键(Long)
      * @param type
      * @return
      */
@@ -26,4 +24,18 @@ public interface TypeDAO {
      * @return
      */
     int deleteTypeById(long id) throws SQLException;
+
+    /**
+     * 查询所有类别
+     * @return
+     */
+    List<Type> selectAllTypes() throws SQLException;
+
+    /**
+     * 根据id查询类别信息
+     * @param id
+     * @return
+     */
+    Type getTypeById(long id) throws SQLException;
+
 }

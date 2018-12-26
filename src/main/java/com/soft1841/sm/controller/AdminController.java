@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
@@ -15,7 +16,7 @@ public class AdminController {
     @FXML
     private TextField user;
     @FXML
-    private TextField password;
+    private PasswordField password;
     private AdminService adminService = ServiceFactory.getAdminServiceInstance();
     public void adminLogin()throws Exception {
         String account = user.getText().trim();
