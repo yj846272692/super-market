@@ -20,18 +20,10 @@
             xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.soft1841.sm.controller.MainSellerController">
 <children>
-    <TableView prefHeight="388.0" prefWidth="365.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="959" AnchorPane.topAnchor="45.0">
-        <columns>
-            <TableColumn prefWidth="75.0" text="类别" />
-        </columns>
-    </TableView>
-    <HBox prefHeight="34.0" prefWidth="365.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
-
-        <TextField AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
-        <Button mnemonicParsing="false" text="查询" AnchorPane.leftAnchor="200" AnchorPane.topAnchor="0.0" />
-        <Button fx:id="listButton" mnemonicParsing="false" text="全部商品" onAction="#listGoods"/>
+    <HBox prefHeight="34.0" prefWidth="465.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <Button mnemonicParsing="false" text="全部商品" onAction="#listGoods"/>
     </HBox>
-    <TableView prefHeight="304.0" prefWidth="287.0" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="960" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="45" />
+    <TableView prefHeight="304.0" prefWidth="287.0" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="80" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="45" />
     <Button prefHeight="83.0" prefWidth="287.0" text="结账" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
         <font>
             <Font size="24.0" />
