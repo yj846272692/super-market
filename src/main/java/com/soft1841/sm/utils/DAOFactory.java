@@ -1,13 +1,7 @@
 package com.soft1841.sm.utils;
 
-import com.soft1841.sm.dao.AdminDAO;
-import com.soft1841.sm.dao.SellerDAO;
-import com.soft1841.sm.dao.SellerGoodsDAO;
-import com.soft1841.sm.dao.TypeDAO;
-import com.soft1841.sm.dao.impl.AdminDAOImpl;
-import com.soft1841.sm.dao.impl.SellerDAOImpl;
-import com.soft1841.sm.dao.impl.SellerGoodsDAOImpl;
-import com.soft1841.sm.dao.impl.TypeDAOImpl;
+import com.soft1841.sm.dao.*;
+import com.soft1841.sm.dao.impl.*;
 
 public class DAOFactory {
     public static SellerDAO getSellerDAOInstance() {
@@ -18,11 +12,13 @@ public class DAOFactory {
         return new AdminDAOImpl();
     }
 
-    public static TypeDAO getTypeDAOInstance() { return new TypeDAOImpl();
-    }
+    public static TypeDAO getTypeDAOInstance() { return new TypeDAOImpl(); }
 
     public static SellerGoodsDAO getSellerGoodsDAOInstance() {
         return new SellerGoodsDAOImpl();
+    }
+    public static GoodsDAO getGoodsDAOInstance() {
+return new GoodsDAOImpl();
     }
 }
 

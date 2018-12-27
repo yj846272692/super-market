@@ -35,7 +35,7 @@ import java.util.ResourceBundle;
  */
 
 public class GoodsController implements Initializable {
-    //布局文件中的表格视图对象，用来显示数据库中读取的所有商品信息
+//    布局文件中的表格视图对象，用来显示数据库中读取的所有商品信息
     @FXML
     private TableView<Goods> goodsTable;
     //布局文件中的下拉框组件对象，用来显示数据库中读取的所有商品类别
@@ -70,8 +70,8 @@ public class GoodsController implements Initializable {
      */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        initTable();
-        initComBox();
+//        initTable();
+//        initComBox();
     }
     //表格初始化方法
     private void initTable() {

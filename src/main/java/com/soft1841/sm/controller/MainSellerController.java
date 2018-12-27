@@ -22,5 +22,7 @@ public class MainSellerController implements Initializable {
     }
 
     public void listGoods(ActionEvent event) {
+
+
     }
 }

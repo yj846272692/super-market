@@ -9,8 +9,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static cn.hutool.json.XMLTokener.entity;
-
 public class SellerGoodsDAOImpl implements SellerGoodsDAO {
     @Override
     public List<Goods> getAllGoods() throws SQLException {
