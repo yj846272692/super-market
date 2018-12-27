@@ -4,6 +4,11 @@ import com.soft1841.sm.entity.Goods;
 
 import java.util.List;
 
+/**
+ * 商品业务逻辑接口
+ * @author 杨晶
+ */
+
 public interface GoodsService  {
     /**
      * 新增商品，返回自增主键

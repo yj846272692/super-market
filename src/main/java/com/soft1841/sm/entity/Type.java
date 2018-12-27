@@ -3,6 +3,11 @@ package com.soft1841.sm.entity;
 import javafx.beans.property.SimpleLongProperty;
 import javafx.beans.property.SimpleStringProperty;
 
+/**
+ * 类别实体类
+ * @author 杨晶
+ */
+
 public class Type {
     private final SimpleLongProperty id = new SimpleLongProperty();
     private final SimpleStringProperty typeName = new SimpleStringProperty("");

@@ -2,6 +2,11 @@ package com.soft1841.sm.entity;
 
 import java.util.Date;
 
+/**
+ *小票实体类
+ * @author 杨晶
+ */
+
 public class Receipt {
     private Long id;
     private Long cashierId;

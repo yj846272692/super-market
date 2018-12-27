@@ -2,6 +2,11 @@ package com.soft1841.sm.entity;
 
 import java.util.Date;
 
+/**
+ * 会员实体类
+ * @author 杨晶
+ */
+
 public class Vip  {
     private long id;
     private String name;

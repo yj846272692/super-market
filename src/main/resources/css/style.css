@@ -1,6 +1,7 @@
 /*全局字体样式*/
  .root {
      -fx-font-size: 20px;
+     -fx-background-color: rgb(182, 217, 236);
  }
 
 /*按钮基础样式*/
@@ -189,5 +190,14 @@
 .titled-pane > .title {
     -fx-background-color: rgb(58, 61, 73);
     -fx-padding: 30 10 10 10;
+}
+.table-view {
+    -fx-background-color: transparent;
+}
+.goodsTable{
+    -fx-background-color: transparent;
+}
+#01{
+    -fx-background-color: rgb(227, 251, 253);
 }
 

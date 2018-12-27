@@ -1,12 +1,10 @@
 package com.soft1841.sm.controller;
 
-import cn.hutool.core.comparator.CompareUtil;
-import cn.hutool.db.Entity;
-import com.soft1841.sm.dao.TypeDAO;
+
 import com.soft1841.sm.entity.Type;
 import com.soft1841.sm.service.TypeService;
 import com.soft1841.sm.utils.ComponentUtil;
-import com.soft1841.sm.utils.DAOFactory;
+
 import com.soft1841.sm.utils.ServiceFactory;
 import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.collections.FXCollections;
@@ -19,7 +17,12 @@ import java.net.URL;
 import java.util.List;
 import java.util.Optional;
 import java.util.ResourceBundle;
-import java.sql.SQLException;
+
+/**
+ * 类别管理界面
+ * @author 杨晶
+ * 2018-12-26
+ */
 
 
 public class TypeController implements Initializable {
@@ -30,7 +33,7 @@ public class TypeController implements Initializable {
     //定义ObservableList数据集合
     private ObservableList<Type> typeData = FXCollections.observableArrayList();
 
-    //通过工厂类获得TypeDAO的实例
+    //通过工厂类获得Service的实例
     private TypeService typeService  = ServiceFactory.getTypeServiceInstance();
 
     //定义实体集合，用来存放数据库查询结果

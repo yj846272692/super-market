@@ -12,6 +12,12 @@ import javafx.scene.layout.StackPane;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+/**
+ * 后台主界面 控制器
+ * @author 杨晶
+ * 2018-12-25
+ */
+
 public class MainAdminController implements Initializable {
     @FXML
     private StackPane mainContainer;
@@ -24,6 +30,9 @@ public class MainAdminController implements Initializable {
     }
     public  void listGoods() throws  Exception{
         switchView("goods.fxml");
+    }
+    public  void listVip() throws  Exception{
+        switchView("vip.fxml");
     }
     private void switchView(String fileName) throws Exception {
         //清除主面板之前内容
