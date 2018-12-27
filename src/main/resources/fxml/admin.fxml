@@ -8,26 +8,29 @@
 
 <?import javafx.scene.effect.Reflection?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.soft1841.sm.controller.AdminController">
-    <Label text="超市管理系统"  fx:id="02"  AnchorPane.topAnchor="100" AnchorPane.leftAnchor="200">
+    <Label text="超 市 管 理 系 统"  fx:id="02"  AnchorPane.topAnchor="80" AnchorPane.leftAnchor="120">
         <effect>
-            <Reflection bottomOpacity="0.2" fraction="0.5" topOffset="-5.0"/>
+            <Reflection bottomOpacity="100" fraction="0.8" topOffset="0.4"/>
         </effect>
         <font>
-            <Font name="System Bold" size="40.0"/>
+            <Font name="System Bold" size="44"/>
         </font>
     </Label>
     <Label text="用 户 名" AnchorPane.topAnchor="200" AnchorPane.leftAnchor="80"/>
-    <TextField promptText="admin" fx:id="user" AnchorPane.topAnchor="200" AnchorPane.leftAnchor="170"/>
+    <TextField  styleClass="btn-radius-normal" promptText="admin" fx:id="user" AnchorPane.topAnchor="200" AnchorPane.leftAnchor="170"/>
     <Label text="密     码" AnchorPane.topAnchor="255" AnchorPane.leftAnchor="80"/>
-    <PasswordField promptText="password" fx:id="password" AnchorPane.topAnchor="250" AnchorPane.leftAnchor="170"/>
-    <Button text="登      录"  onAction="#adminLogin" AnchorPane.topAnchor="330"
-            AnchorPane.leftAnchor="180" fx:id="01"/>
-    <Label text="忘记密码?" fx:id="03" AnchorPane.topAnchor="380" AnchorPane.leftAnchor="440"/>
-    <Label text="记住密码" fx:id="04" AnchorPane.topAnchor="380" AnchorPane.leftAnchor="205"/>
+    <PasswordField  styleClass="btn-radius-normal" promptText="password" fx:id="password" AnchorPane.topAnchor="250" AnchorPane.leftAnchor="170"/>
+    <Button  styleClass="btn-radius-large" text="登录"  onAction="#adminLogin" AnchorPane.topAnchor="330"
+            AnchorPane.leftAnchor="200"  prefWidth="200" fx:id="01"/>
+    <Label text="联系我们" AnchorPane.rightAnchor="60" AnchorPane.bottomAnchor="190"/>
 
-    <Label text="其他方式登陆" AnchorPane.topAnchor="490" AnchorPane.leftAnchor="50" fx:id="08"/>
 
+    <ImageView fitHeight="150" fitWidth="150" AnchorPane.bottomAnchor="30" AnchorPane.rightAnchor="30">
+        <Image url="/img/WX.jpg"/>
+    </ImageView>
 </AnchorPane>

@@ -1,5 +1,10 @@
 package com.soft1841.sm.entity;
 
+/**
+ * 小票明细实体类
+ * @author 杨晶
+ */
+
 
 
 public class Detail {

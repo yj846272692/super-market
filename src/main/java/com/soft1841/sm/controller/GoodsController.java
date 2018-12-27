@@ -143,7 +143,7 @@ public class GoodsController implements Initializable {
                 });
             }
         });
-        //将除列加入图书表格
+        //将删除列加入图书表格
         goodsTable.getColumns().add(delCol);
         //4.商品表格双击事件,双击弹出显示商品详情的界面
         goodsTable.setRowFactory(tv -> {

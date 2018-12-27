@@ -1,5 +1,10 @@
 package com.soft1841.sm.entity;
 
+/**
+ * 商品实体类
+ * @author 杨晶
+ */
+
 
 public class Goods {
    private  Long id;

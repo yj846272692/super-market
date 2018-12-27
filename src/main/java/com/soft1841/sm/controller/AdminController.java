@@ -8,9 +8,14 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+
+/**
+ * 管理员登陆界面
+ * @author 杨晶
+ * 208-12-24
+ */
 
 public class AdminController {
     @FXML
@@ -26,14 +31,14 @@ public class AdminController {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("提示");
         if (flag) {
-            alert.setContentText("登录成功！");
+            alert.setContentText("登录成功,欢迎进入666后台管理~");
             alert.showAndWait();
             Stage mainStage = new Stage();
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/main.fxml"));
             BorderPane root = fxmlLoader.load();
             Scene scene =  new Scene(root);
+            scene.getStylesheets().addAll("/css/style.css");
             mainStage.setTitle("超市管理系统");
-            mainStage.setMaximized(true);
             mainStage.setMaximized(true);
             mainStage.setScene(scene);
             mainStage.show();

@@ -2,12 +2,11 @@ package com.soft1841.sm.utils;
 
 
 import com.soft1841.sm.service.GoodsService;
-import com.soft1841.sm.service.Impl.AdminServiceImpl;
-import com.soft1841.sm.service.Impl.GoodsServiceImpl;
-import com.soft1841.sm.service.Impl.SellerServiceImpl;
-import com.soft1841.sm.service.Impl.TypeServiceImpl;
+import com.soft1841.sm.service.Impl.*;
 import com.soft1841.sm.service.SellerService;
 import com.soft1841.sm.service.TypeService;
+import com.soft1841.sm.service.VipService;
+
 /**
  * 业务逻辑类工厂
  */
@@ -19,5 +18,6 @@ public class ServiceFactory {
     }
     public static AdminServiceImpl getAdminServiceInstance(){ return new AdminServiceImpl(); }
     public static GoodsService getGoodsServiceInstance() { return new GoodsServiceImpl(); }
+    public static VipService getVipDAOInstance(){return  new VipServiceImpl(); }
 
 }

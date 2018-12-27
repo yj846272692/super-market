@@ -29,7 +29,7 @@
 
         <TextField AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
         <Button mnemonicParsing="false" text="查询" AnchorPane.leftAnchor="200" AnchorPane.topAnchor="0.0" />
-        <Button fx:id="listButton" mnemonicParsing="false" text="全部商品" onAction="#listGoods"/>
+        <Button fx:id="listButton" mnemonicParsing="false" text="全部商品"/>
     </HBox>
     <TableView prefHeight="304.0" prefWidth="287.0" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="960" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="45" />
     <Button prefHeight="83.0" prefWidth="287.0" text="结账" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">

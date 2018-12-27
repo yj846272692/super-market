@@ -7,6 +7,11 @@ import com.soft1841.sm.utils.DAOFactory;
 
 import java.sql.SQLException;
 
+/**
+ * 管理员Service的实现类
+ * @author 杨晶
+ */
+
 public class AdminServiceImpl implements AdminService {
     private AdminDAO adminDAO = DAOFactory.getAdminDAOInstance();
 

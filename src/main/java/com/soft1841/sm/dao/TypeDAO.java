@@ -1,6 +1,6 @@
 package com.soft1841.sm.dao;
 
-import cn.hutool.db.Entity;
+
 import com.soft1841.sm.entity.Type;
 
 import java.sql.SQLException;

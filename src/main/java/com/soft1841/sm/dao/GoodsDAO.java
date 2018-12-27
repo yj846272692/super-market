@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 /**
- * 图书DAO
+ * 商品DAO
  * @author 杨晶
  */
 

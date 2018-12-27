@@ -9,6 +9,11 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 商品Service的实现类
+ * @author 杨晶
+ */
+
 public class GoodsServiceImpl implements GoodsService {
     private GoodsDAO goodsDAO = DAOFactory.getGoodsDAOInstance();
     @Override
