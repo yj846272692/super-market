@@ -8,24 +8,24 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="645.0" prefWidth="1001.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.soft1841.sm.controller.MainSellerController">
-    <Button prefHeight="83.0" prefWidth="287.0" text="结账" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+    <Button prefHeight="83.0" prefWidth="246.0" text="结账" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="41.0">
         <font>
             <Font size="24.0" />
         </font>
     </Button>
-    <TableView fx:id="sellerGoodsTable" layoutY="39.0" prefHeight="524.0" prefWidth="1000" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="39.0">
+    <TableView fx:id="sellerGoodsTable" layoutY="39.0" prefHeight="524.0" prefWidth="949.0" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="39.0">
         <columns>
             <TableColumn prefWidth="129.00001525878906" text="ID">
                 <cellValueFactory>
                     <PropertyValueFactory property="id" />
                 </cellValueFactory>
             </TableColumn>
-            <TableColumn prefWidth="685.9999847412109" text="商品名称">
+            <TableColumn prefWidth="346.0" text="商品名称">
                 <cellValueFactory>
                     <PropertyValueFactory property="name" />
                 </cellValueFactory>
             </TableColumn>
-            <TableColumn minWidth="30.0" prefWidth="183.0" text="价格">
+            <TableColumn minWidth="30.0" prefWidth="523.0" text="价格">
                 <cellValueFactory>
                     <PropertyValueFactory property="price" />
                 </cellValueFactory>

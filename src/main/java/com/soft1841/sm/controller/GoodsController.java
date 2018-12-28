@@ -70,8 +70,8 @@ public class GoodsController implements Initializable {
      */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-//        initTable();
-//        initComBox();
+        initTable();
+        initComBox();
     }
     //表格初始化方法
     private void initTable() {
