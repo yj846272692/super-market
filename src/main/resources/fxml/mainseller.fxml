@@ -3,34 +3,58 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.cell.PropertyValueFactory?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.soft1841.sm.controller.MainSellerController">
-    <Button prefHeight="83.0" prefWidth="246.0" text="结账" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="41.0">
+<AnchorPane prefHeight="552.0" prefWidth="1329.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.soft1841.sm.controller.MainSellerController">
+    <Button prefHeight="83.0" prefWidth="287.0" text="结账" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
         <font>
             <Font size="24.0" />
         </font>
     </Button>
-    <TableView fx:id="sellerGoodsTable" AnchorPane.rightAnchor="287" AnchorPane.bottomAnchor="83" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="39.0">
+    <TableView fx:id="sellerGoodsTable" AnchorPane.bottomAnchor="83.0" AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="287" AnchorPane.topAnchor="39.0">
         <columns>
-            <TableColumn prefWidth="129.00001525878906" text="ID">
+            <TableColumn prefWidth="196.0" text="ID">
                 <cellValueFactory>
                     <PropertyValueFactory property="id" />
                 </cellValueFactory>
             </TableColumn>
-            <TableColumn prefWidth="346.0" text="商品名称">
+            <TableColumn prefWidth="676.0" text="商品名称">
                 <cellValueFactory>
                     <PropertyValueFactory property="name" />
                 </cellValueFactory>
             </TableColumn>
-            <TableColumn minWidth="30.0" prefWidth="523.0" text="价格">
+            <TableColumn minWidth="30.0" prefWidth="159.0" text="价格">
                 <cellValueFactory>
                     <PropertyValueFactory property="price" />
                 </cellValueFactory>
             </TableColumn>
         </columns>
     </TableView>
+    <AnchorPane prefHeight="360.0" prefWidth="300.0" AnchorPane.rightAnchor="10" AnchorPane.topAnchor="247">
+        <Button layoutX="1171.0" layoutY="292.0" mnemonicParsing="false" text="8" />
+        <Button layoutX="1241.0" layoutY="292.0" mnemonicParsing="false" text="9" />
+        <Button layoutX="1099.0" layoutY="292.0" mnemonicParsing="false" text="7" />
+        <Button layoutX="1171.0" layoutY="239.0" mnemonicParsing="false" text="5" />
+        <Button layoutX="1241.0" layoutY="239.0" mnemonicParsing="false" text="6" />
+        <Button layoutX="1099.0" layoutY="191.0" mnemonicParsing="false" text="1" />
+        <Button layoutX="1171.0" layoutY="191.0" mnemonicParsing="false" text="2" />
+        <Button layoutX="1241.0" layoutY="191.0" mnemonicParsing="false" text="3" />
+        <Button layoutX="1099.0" layoutY="239.0" mnemonicParsing="false" text="4" />
+        <Button layoutX="1079.0" layoutY="363.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="69.0" text="现金" />
+        <Button layoutX="1165.0" layoutY="363.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="69.0" text="微信" />
+        <Button layoutX="1246.0" layoutY="363.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="69.0" text="支付宝" />
+        <Button layoutX="1099.0" layoutY="147.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="94.0" text="0" />
+        <Button layoutX="1212.0" layoutY="147.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="57.0" text="Back" />
+        <TextField layoutX="1092.0" layoutY="79.0" prefHeight="41.0" prefWidth="184.0" />
+    </AnchorPane>
+
+
+
+   <Button  mnemonicParsing="false" prefHeight="49.0" prefWidth="191.0" text="VIP服务"
+   AnchorPane.bottomAnchor="13" AnchorPane.topAnchor="985" AnchorPane.rightAnchor="865" AnchorPane.leftAnchor="865"/>
+
 
 </AnchorPane>
