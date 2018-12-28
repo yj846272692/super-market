@@ -54,7 +54,7 @@
 
 
    <Button  mnemonicParsing="false" prefHeight="49.0" prefWidth="191.0" text="VIP服务"
-   AnchorPane.bottomAnchor="13" AnchorPane.topAnchor="985" AnchorPane.rightAnchor="865" AnchorPane.leftAnchor="865"/>
+   AnchorPane.bottomAnchor="13" AnchorPane.topAnchor="986" AnchorPane.rightAnchor="865" AnchorPane.leftAnchor="865"/>
 
 
 </AnchorPane>
