@@ -14,11 +14,19 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
 <BorderPane xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.soft1841.sm.controller.MainAdminController">
 
     <top>
         <AnchorPane prefHeight="80.0">
+            <ImageView AnchorPane.rightAnchor="250" AnchorPane.topAnchor="25">
+                <Image url="/img/管理员.png"/>
+            </ImageView>
+            <Label text="管理员: 杨晶" AnchorPane.rightAnchor="130" AnchorPane.topAnchor="20"/>
+            <Label text="Tel:18452555712" AnchorPane.topAnchor="48" AnchorPane.rightAnchor="75"/>
             <Label text="超市后台管理系统"
                    AnchorPane.topAnchor="20" AnchorPane.leftAnchor="10">
                 <effect>
@@ -28,54 +36,13 @@
                     <Font name="System Bold" size="26.0"/>
                 </font>
             </Label>
-            <Button text="退出系统"
-                    AnchorPane.topAnchor="20" AnchorPane.rightAnchor="20"/>
+
+
         </AnchorPane>
     </top>
     <center>
-        <SplitPane>
             <AnchorPane  minWidth="200" maxWidth="200">
-                <Accordion  AnchorPane.leftAnchor="0.0"
-                           AnchorPane.rightAnchor="0.0"
-                           AnchorPane.topAnchor="0.0">
-                    <panes>
-                        <TitledPane alignment="TOP_LEFT" text="商品管理">
-                            <VBox minHeight="100" spacing="10" >
-                                <Button  text="商品类别" onAction="#listType"/>
-                                <Button  text="商品信息" onAction="#listGoods" />
-                            </VBox>
-                        </TitledPane>
-                        <TitledPane alignment="TOP_LEFT" text="员工管理">
-                            <VBox minHeight="130" spacing="10" >
-                                <Button styleClass="menu-btn" text="职位类别" />
-                                <Button styleClass="menu-btn" text="员工信息" />
-                            </VBox>
-                        </TitledPane>
-                        <TitledPane alignment="TOP_LEFT" text="会员管理">
-                            <VBox minHeight="130" spacing="10" >
-                                <Button  text="会员信息"  onAction="#listVip"/>
-                            </VBox>
-                        </TitledPane>
-                        <TitledPane alignment="TOP_LEFT" text="供应商管理">
-                            <VBox minHeight="130" spacing="10" >
-                                <Button  text="供应商信息"/>
-                            </VBox>
-                        </TitledPane>
-                        <TitledPane alignment="TOP_LEFT" text="财政管理">
-                            <VBox minHeight="100" spacing="10" >
-                                <Button  text="优惠管理" />
-                                <Button  text="数据分析" />
-                            </VBox>
-                        </TitledPane>
-                        <TitledPane alignment="TOP_LEFT" text="系统维护">
-                            <VBox minHeight="130" spacing="10">
-                                <Button  text="系统初始化"/>
-                                <Button  text="数据备份"/>
-                                <Button  text="主题设置"/>
-                            </VBox>
-                        </TitledPane>
-                    </panes>
-                </Accordion>
+
             </AnchorPane>
             <ScrollPane fitToWidth="true" hbarPolicy="NEVER">
                 <StackPane fx:id="mainContainer">
@@ -86,12 +53,44 @@
                     </padding>
                 </StackPane>
             </ScrollPane>
-
-
-            <padding>
-                <Insets top="10"/>
-            </padding>
-        </SplitPane>
     </center>
+    <bottom>
+        <AnchorPane >
+
+
+            <HBox spacing="1" AnchorPane.leftAnchor="300" prefHeight="60" alignment="CENTER">
+                <ImageView>
+                    <Image url="/img/类别.png"/>
+                </ImageView>
+                <Button   fx:id="1"  styleClass="btn-radius-large" text="商品类别" onAction="#listType" AnchorPane.leftAnchor="300"/>
+            </HBox>
+
+            <HBox AnchorPane.leftAnchor="600" prefHeight="60" alignment="CENTER">
+                <ImageView>
+                    <Image url="/img/信息.png"/>
+                </ImageView>
+                <Button  fx:id="2" styleClass="btn-radius-large"  text="商品信息" onAction="#listGoods" AnchorPane.leftAnchor="600" />
+            </HBox>
+
+            <HBox AnchorPane.leftAnchor="900" prefHeight="60" alignment="CENTER">
+                <ImageView>
+                    <Image url="/img/会员.png"/>
+                </ImageView>
+                <Button  fx:id="3"  styleClass="btn-radius-large" text="会员信息"  onAction="#listVip" AnchorPane.leftAnchor="900"/>
+            </HBox>
+
+            <HBox AnchorPane.leftAnchor="1500" prefHeight="60" alignment="CENTER">
+                <ImageView>
+                    <Image url="/img/首页.png"/>
+                </ImageView>
+                <Button  fx:id="8"  styleClass="btn-radius-large" text="返回首页"  onAction="#shouye" AnchorPane.leftAnchor="1200"/>
+            </HBox>
+
+
+
+
+
+        </AnchorPane>
+    </bottom>
 </BorderPane>
 

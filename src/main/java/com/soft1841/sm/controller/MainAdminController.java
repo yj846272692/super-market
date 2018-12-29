@@ -6,9 +6,15 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
+import javafx.scene.web.WebEngine;
+import javafx.scene.web.WebView;
+import javafx.stage.Stage;
 
+import javax.net.ssl.HttpsURLConnection;
+import javax.swing.text.html.HTMLDocument;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -21,7 +27,6 @@ import java.util.ResourceBundle;
 public class MainAdminController implements Initializable {
     @FXML
     private StackPane mainContainer;
-
     @Override
     public void initialize(URL location, ResourceBundle resources) {
     }
@@ -34,6 +39,37 @@ public class MainAdminController implements Initializable {
     public  void listVip() throws  Exception{
         switchView("vip.fxml");
     }
+        public  void  web() throws  Exception{
+            Stage stage = new Stage();
+            WebView webView = new WebView();
+            WebEngine webEngine = webView.getEngine();
+            webEngine.load("https://www.baidu.com/?tn=64075107_1_dg");
+            Scene scene = new Scene(webView);
+            stage.setScene(scene);
+            stage.show();
+        }
+    public  void  taobao() throws  Exception{
+        Stage stage = new Stage();
+        WebView webView = new WebView();
+        WebEngine webEngine = webView.getEngine();
+        webEngine.load("https://www.taobao.com/");
+        Scene scene = new Scene(webView);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public  void  jingdong() throws  Exception{
+        Stage stage = new Stage();
+        WebView webView = new WebView();
+        WebEngine webEngine = webView.getEngine();
+        webEngine.load("https://www.jd.com/");
+        Scene scene = new Scene(webView);
+        stage.setScene(scene);
+        stage.show();
+    }
+        public  void shouye() throws Exception {
+        switchView("default.fxml");
+        }
     private void switchView(String fileName) throws Exception {
         //清除主面板之前内容
         ObservableList<Node> list = mainContainer.getChildren();
