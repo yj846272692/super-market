@@ -31,6 +31,7 @@ public class SellerController {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/mainseller.fxml"));
             AnchorPane root = fxmlLoader.load();
             Scene scene =  new Scene(root);
+            scene.getStylesheets().add("/css/frontdesk.css");
             mainStage.setTitle("收银员界面");
             mainStage.setMaximized(true);
             mainStage.setScene(scene);

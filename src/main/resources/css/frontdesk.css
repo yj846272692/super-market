@@ -1,0 +1,37 @@
+/*支付宝按钮*/
+.btn-zhifubao{
+    /*背景颜色*/
+    -fx-background-color: #00aaee;
+}
+
+/*微信按钮*/
+.btn-weixin{
+    /*背景颜色*/
+    -fx-background-color: #03bc08;
+}
+
+/*现金按钮*/
+.btn-xianjin{
+    /*背景颜色*/
+    -fx-background-color: #ffbb00;
+}
+
+.btn-jiezhang{
+    /*文本对齐方式*/
+    -fx-text-alignment: center;
+}
+
+
+.AnchorPane-Main{
+    /*背景颜色*/
+    -fx-background-color: #c7e4ee;
+}
+
+
+/*鼠标覆盖按钮效果*/
+.btn-basic:hover {
+    /*粗体*/
+    -fx-font-weight: bold;
+    /*透明度*/
+    -fx-opacity: 0.8;
+}
