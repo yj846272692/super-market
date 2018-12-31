@@ -12,19 +12,18 @@ public class DAOFactory {
         return new AdminDAOImpl();
     }
 
-    public static TypeDAO getTypeDAOInstance() { return new TypeDAOImpl();
-    }
+    public static TypeDAO getTypeDAOInstance() { return new TypeDAOImpl();    }
 
     public static GoodsDAO getGoodsDAOInstance() {
         return new GoodsDAOImpl();
     }
-
 
     public  static VipDAO geeVipDAOInstance(){return  new VipDAOImpl();}
 
     public static SellerGoodsDAO getSellerGoodsDAOInstance() {
         return new SellerGoodsDAOImpl();
     }
+
 
 }
 

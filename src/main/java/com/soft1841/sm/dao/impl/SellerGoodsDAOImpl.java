@@ -19,6 +19,15 @@ public class SellerGoodsDAOImpl implements SellerGoodsDAO {
             }
             return goodsList;
         }
+
+
+
+    @Override
+    public Goods getGoodsByBarCode(String barcode) throws SQLException {
+        Entity entity = Db.use().queryOne("SELECT * FROM t_goods WHERE barcode = ?",barcode);
+        return convertGoods(entity);
+    }
+
     private Goods convertGoods(Entity entity) {
         Goods goods = new Goods();
         goods.setId(entity.getLong("id"));

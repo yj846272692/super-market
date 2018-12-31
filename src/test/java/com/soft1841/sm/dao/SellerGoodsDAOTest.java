@@ -18,4 +18,14 @@ public class SellerGoodsDAOTest {
         s.forEach(goods -> System.out.println(goods));
 
     }
+
+    @Test
+    public void getAllGoods1() {
+    }
+
+    @Test
+    public void getGoodsByBarCode() throws SQLException {
+        Goods goods = sellerGoodsDAO.getGoodsByBarCode("2018001");
+        System.out.println(goods.getName());
+    }
 }

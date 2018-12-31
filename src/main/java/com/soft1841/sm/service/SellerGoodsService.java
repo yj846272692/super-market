@@ -12,4 +12,11 @@ public interface SellerGoodsService {
      */
     List<Goods> getAllGooods();
 
+    /**
+     * 根据条形码查询商品信息
+     * @param barcode
+     * @return
+     */
+    Goods getGoods(String barcode);
+
 }

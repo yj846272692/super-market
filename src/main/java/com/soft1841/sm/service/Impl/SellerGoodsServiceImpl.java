@@ -23,5 +23,11 @@ public class SellerGoodsServiceImpl implements SellerGoodsService {
         }
         return goodsList;
     }
+
+    @Override
+    public Goods getGoods(String barcode) {
+
+        return ;
+    }
 }
 

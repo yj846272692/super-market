@@ -14,7 +14,7 @@
             <Font size="24.0" />
         </font>
     </Button>
-    <TableView fx:id="sellerGoodsTable" AnchorPane.bottomAnchor="83.0" AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="287" AnchorPane.topAnchor="39.0">
+    <TableView fx:id="sellerGoodsTable" AnchorPane.bottomAnchor="83.0" AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="287" AnchorPane.topAnchor="79.0">
         <columns>
             <TableColumn prefWidth="196.0" text="ID">
                 <cellValueFactory>
@@ -26,14 +26,19 @@
                     <PropertyValueFactory property="name" />
                 </cellValueFactory>
             </TableColumn>
-            <TableColumn minWidth="30.0" prefWidth="228.0" text="价格">
+            <TableColumn minWidth="30.0" prefWidth="209.0" text="价格">
                 <cellValueFactory>
                     <PropertyValueFactory property="price" />
                 </cellValueFactory>
             </TableColumn>
+            <TableColumn minWidth="30.0" prefWidth="100.0" text="数量">
+                <cellValueFactory>
+                    <PropertyValueFactory property="number" />
+                </cellValueFactory>
+            </TableColumn>
         </columns>
     </TableView>
-    <AnchorPane prefHeight="460.0" prefWidth="300.0" AnchorPane.rightAnchor="10" AnchorPane.topAnchor="57">
+    <AnchorPane prefHeight="460.0" prefWidth="300.0" AnchorPane.rightAnchor="10" AnchorPane.topAnchor="257">
         <Button layoutX="1171.0" layoutY="292.0" mnemonicParsing="false" text="8" />
         <Button layoutX="1241.0" layoutY="292.0" mnemonicParsing="false" text="9" />
         <Button layoutX="1099.0" layoutY="292.0" mnemonicParsing="false" text="7" />
@@ -43,12 +48,16 @@
         <Button layoutX="1171.0" layoutY="191.0" mnemonicParsing="false" text="2" />
         <Button layoutX="1241.0" layoutY="191.0" mnemonicParsing="false" text="3" />
         <Button layoutX="1099.0" layoutY="239.0" mnemonicParsing="false" text="4" />
-        <Button styleClass="btn-xianjin" layoutX="1079.0" layoutY="363.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="69.0" text="现金" />
-        <Button styleClass="btn-weixin" layoutX="1165.0" layoutY="363.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="69.0" text="微信" />
-        <Button styleClass="btn-zhifubao" layoutX="1246.0" layoutY="363.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="69.0" text="支付宝" />
+        <Button layoutX="1079.0" layoutY="363.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="69.0" styleClass="btn-xianjin" text="现金" />
+        <Button layoutX="1165.0" layoutY="363.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="69.0" styleClass="btn-weixin" text="微信" />
+        <Button layoutX="1246.0" layoutY="363.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="69.0" styleClass="btn-zhifubao" text="支付宝" />
         <Button layoutX="1099.0" layoutY="147.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="94.0" text="0" />
         <Button layoutX="1212.0" layoutY="147.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="57.0" text="Back" />
-        <TextField layoutX="1092.0" layoutY="79.0" prefHeight="41.0" prefWidth="184.0" />
+        <TextField layoutX="1092.0" layoutY="79.0" prefHeight="48.0" prefWidth="184.0" text="实收：" />
     </AnchorPane>
-    <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="29.0" text="VIP服务" AnchorPane.bottomAnchor="13" AnchorPane.leftAnchor="865" AnchorPane.rightAnchor="865" AnchorPane.topAnchor="986" />
+    <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="29.0" text="VIP服务" AnchorPane.bottomAnchor="13" AnchorPane.leftAnchor="845" AnchorPane.rightAnchor="845" AnchorPane.topAnchor="986" />
+   <TextField prefHeight="30.0" prefWidth="369.0" text="请输入商品条形码:" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="24.5" />
+    <Button mnemonicParsing="false" text="添加" AnchorPane.leftAnchor="400" AnchorPane.topAnchor="24.5" />
+   <TextField AnchorPane.bottomAnchor="20" AnchorPane.leftAnchor="7" prefHeight="30.0" prefWidth="258.0" text="收银员工号：666001" />
+   <TextField AnchorPane.rightAnchor="49" AnchorPane.topAnchor="180"  prefHeight="48.0" prefWidth="184.0" text="应收：" />
 </AnchorPane>
