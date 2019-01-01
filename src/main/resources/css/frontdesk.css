@@ -1,3 +1,8 @@
+/*全局字体样式*/
+.root {
+    -fx-font-size: 14px;
+}
+
 /*支付宝按钮*/
 .btn-zhifubao{
     /*背景颜色*/
@@ -34,4 +39,43 @@
     -fx-font-weight: bold;
     /*透明度*/
     -fx-opacity: 0.8;
+}
+/*数字按钮*/
+.btn-number{
+    /*背景颜色*/
+    -fx-background-color: #f2edd7;
+}
+
+/*数字0按钮*/
+.btn-numberZero{
+    /*背景颜色*/
+    -fx-background-color: #edebcb;
+}
+
+/*back按钮*/
+.btn-back{
+    /*背景颜色*/
+    -fx-background-color: #c7c7c7;
+}
+
+/*VIP服务按钮*/
+.btn-vip{
+    /*背景颜色*/
+    -fx-background-color: #bcb892;
+    /*文本对齐方式*/
+    -fx-text-alignment: center;
+}
+
+/*结账按钮*/
+.btn-jiezhang{
+    /*背景颜色*/
+    -fx-background-color: #c7c1ae;
+    /*文本对齐方式*/
+    -fx-text-alignment: center;
+}
+
+/*添加按钮*/
+.btn-tianjia{
+    /*背景颜色*/
+    -fx-background-color: #74bc96;
 }

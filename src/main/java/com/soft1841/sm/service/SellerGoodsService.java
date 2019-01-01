@@ -17,6 +17,6 @@ public interface SellerGoodsService {
      * @param barcode
      * @return
      */
-    Goods getGoods(String barcode);
+    Goods getGoodsByBarCode(String barcode);
 
 }

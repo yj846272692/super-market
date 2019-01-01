@@ -4,7 +4,6 @@ import com.soft1841.sm.dao.SellerGoodsDAO;
 import com.soft1841.sm.entity.Goods;
 import com.soft1841.sm.service.SellerGoodsService;
 import com.soft1841.sm.utils.DAOFactory;
-
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -25,9 +24,14 @@ public class SellerGoodsServiceImpl implements SellerGoodsService {
     }
 
     @Override
-    public Goods getGoods(String barcode) {
-
-        return ;
+    public Goods getGoodsByBarCode(String barcode) {
+        Goods goods = new Goods();
+        try {
+            goods = sellerGoodsDAO.getGoodsByBarCode(barcode);
+        } catch (SQLException e) {
+            System.err.print("查询单个商品出现异常");
+        }
+        return goods;
     }
 }
 

@@ -17,4 +17,14 @@ public class SellerGoodsServiceTest {
         goodsList.forEach(goods -> System.out.println(goods));
 
     }
+
+    @Test
+    public void getAllGooods1() {
+    }
+
+    @Test
+    public void getGoods() {
+        Goods goods = sellerGoodsService.getGoodsByBarCode("2018001");
+        System.out.println(goods.getName());
+    }
 }
