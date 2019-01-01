@@ -80,28 +80,6 @@ public class TypeController implements Initializable {
         showTypeData(typeList);
     }
 
-    public void addType() {
-        //创建一个输入对话框
-        TextInputDialog dialog = new TextInputDialog("新类别");
-        dialog.setTitle("商品类别");
-        dialog.setHeaderText("新增商品类别");
-        dialog.setContentText("请输入商品类别名称:");
-        Optional<String> result = dialog.showAndWait();
-
-        //确认输入了内容
-        if (result.isPresent()) {
-            //获得输入的内容
-            String typeName = result.get();
-            //创建一个Type对象，插入数据库，并返回主键
-            Type type = new Type();
-            type.setTypeName(typeName);
-            long id = 0;
-            id = typeService.addType(type);
-            type.setId(id);
-            //加入ObservableList，刷新模型视图，不用重新查询数据库也可以立刻看到结果
-            typeData.add(type);
-        }
-    }
 
 
     private void showTypeData(List<Type> typeList) {

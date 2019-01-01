@@ -75,7 +75,7 @@ public class AddGoodsController  implements Initializable {
         this.getGoodsData().add(goods);
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("提示信息");
-        alert.setHeaderText("新增图书成功!");
+        alert.setHeaderText("新增商品成功!");
         alert.showAndWait();
         Stage stage = (Stage) goodsName.getScene().getWindow();
         stage.close();

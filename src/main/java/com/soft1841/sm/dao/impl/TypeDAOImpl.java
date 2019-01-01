@@ -53,6 +53,11 @@ public class TypeDAOImpl implements TypeDAO {
         return convertType(entity);
     }
 
+    @Override
+    public int countTypes() throws SQLException {
+       return Db.use().queryNumber("SELECT COUNT(*) FROM t_type  ").intValue();
+    }
+
     /**
      * 将Entity转换为Type类型
      *

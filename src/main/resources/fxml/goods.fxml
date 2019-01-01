@@ -8,8 +8,6 @@
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.soft1841.sm.controller.GoodsController">
     <HBox alignment="BOTTOM_CENTER" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10" spacing="10">
-        <Button styleClass="btn-basic,btn-radius-large,green-theme" text="添加商品" onAction="#newGoodsStage"/>
-        <Button styleClass="btn-basic,btn-radius-large,blue-theme" text="导出数据"/>
     </HBox>
     <HBox alignment="CENTER" AnchorPane.topAnchor="60" AnchorPane.leftAnchor="10" spacing="10">
         <ComboBox promptText="选择商品类别" fx:id="typeComboBox" prefWidth="400"/>

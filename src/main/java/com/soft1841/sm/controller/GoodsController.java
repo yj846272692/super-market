@@ -210,19 +210,7 @@ public class GoodsController implements Initializable {
         goodsTable.setItems(goodsData);
     }
     //弹出新增商品界面方法
-    public void newGoodsStage() throws Exception {
-        Stage addGoodsStage = new Stage();
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/add_goods.fxml"));
-        AnchorPane root = fxmlLoader.load();
-        Scene scene = new Scene(root);
-        AddGoodsController addBookController = fxmlLoader.getController();
-        addBookController.setGoodsData(goodsData);
-        addGoodsStage.setTitle("新增图书界面");
-        //界面大小不可变
-        addGoodsStage.setResizable(false);
-        addGoodsStage.setScene(scene);
-        addGoodsStage.show();
-    }
+
     //根据关键词搜索方法
     public void search() {
         goodsTable.getItems().removeAll(goodsData);

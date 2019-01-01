@@ -26,6 +26,16 @@ public class VipServiceTest {
 
     @Test
     public void addVip() {
+        Vip vip = new Vip();
+        vip.setName("ceshi11");
+        vip.setMobile("11111111");
+        vip.setVipNumber("111");
+        vip.setSex("男");
+        try {
+            vipDAO.insertVip(vip);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     @Test

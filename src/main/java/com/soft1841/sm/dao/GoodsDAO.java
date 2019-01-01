@@ -77,4 +77,12 @@ public interface GoodsDAO {
      * @throws SQLException
      */
     int countByType(long typeId) throws SQLException;
+
+    /**
+     * 统计商品总数
+     *
+     * @return
+     * @throws SQLException
+     */
+    int countGoods() throws SQLException;
 }

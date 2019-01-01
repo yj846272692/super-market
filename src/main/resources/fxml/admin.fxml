@@ -14,9 +14,7 @@
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.soft1841.sm.controller.AdminController">
     <Label text="超 市 管 理 系 统"  fx:id="02"  AnchorPane.topAnchor="80" AnchorPane.leftAnchor="120">
-        <effect>
-            <Reflection bottomOpacity="100" fraction="0.8" topOffset="0.4"/>
-        </effect>
+
         <font>
             <Font name="System Bold" size="44"/>
         </font>
