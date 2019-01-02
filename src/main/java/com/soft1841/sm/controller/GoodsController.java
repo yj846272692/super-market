@@ -118,7 +118,7 @@ public class GoodsController implements Initializable {
         //3.删除列的相关设置
         delCol.setCellValueFactory(param -> new ReadOnlyObjectWrapper<>(param.getValue()));
         delCol.setCellFactory(param -> new TableCell<Goods, Goods>() {
-            private final Button deleteButton = ComponentUtil.getButton("删除", "warning-theme");
+            private final Button deleteButton = ComponentUtil.getButton("删除", "gray-theme");
 
             @Override
             protected void updateItem(Goods goods, boolean empty) {

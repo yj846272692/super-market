@@ -11,7 +11,7 @@ import javafx.scene.control.TableView;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class MainSellerController implements Initializable {
+public class    MainSellerController implements Initializable {
     @FXML
     private TableView<Goods> sellerGoodsTable;
 

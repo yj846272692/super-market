@@ -9,18 +9,13 @@ import com.soft1841.sm.service.TypeService;
 import com.soft1841.sm.service.VipService;
 import com.soft1841.sm.utils.ServiceFactory;
 import javafx.application.Platform;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.geometry.Insets;
-import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.Scene;
-
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -30,10 +25,7 @@ import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 import java.net.URL;
 
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
+
 import java.util.*;
 
 /**
@@ -48,8 +40,7 @@ public class MainAdminController implements Initializable {
     private TypeService typeService  = ServiceFactory.getTypeServiceInstance();
     private VipService vipService = ServiceFactory.getVipDAOInstance();
     private List<Vip> vipList = new ArrayList<>();
-    @FXML
-    private FlowPane vipPane;
+
 
 
 
@@ -143,6 +134,8 @@ public class MainAdminController implements Initializable {
         AddGoodsController addBookController = fxmlLoader.getController();
         addBookController.setGoodsData(goodsData);
         addGoodsStage.setTitle("新增商品界面");
+        scene.getStylesheets().add("/css/style.css");
+
         //界面大小不可变
         addGoodsStage.setResizable(false);
         addGoodsStage.setScene(scene);
@@ -173,44 +166,6 @@ public class MainAdminController implements Initializable {
     }
 
 
-    private void showVip(List<Vip> vipList) {
-        //移除之前的记录
-        vipPane.getChildren().clear();
-        for (Vip vip : vipList) {
-            HBox hBox = new HBox();
-            hBox.setPrefSize(300, 300);
-            hBox.getStyleClass().add("box");
-            hBox.setSpacing(30);
-            // 垂直盒子
-            VBox rightBox = new VBox();
-            rightBox.setSpacing(15);
-            Label nameLabel = new Label(vip.getName());
-            nameLabel.getStyleClass().add("font-title");
-            Label sexLabel = new Label(vip.getSex());
-            Label mobileLabel = new Label(vip.getMobile());
-            Label numberLabel = new Label(vip.getVipNumber());
-            Label dateLabel = new Label(vip.getJoinDate().toString());
-            Button delBtn = new Button("删 除");
-            delBtn.getStyleClass().add("warning-theme");
-            rightBox.getChildren().addAll(nameLabel, sexLabel, mobileLabel, numberLabel, dateLabel);
-            hBox.getChildren().addAll(rightBox);
-            vipPane.getChildren().add(hBox);
-            //删除按钮事件
-            delBtn.setOnAction(event -> {
-                Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-                alert.setTitle("确认对话框");
-                alert.setContentText("确定要删除这行记录吗? ");
-                Optional<ButtonType> result = alert.showAndWait();
-                if (result.get() == ButtonType.OK) {
-                    long id = vip.getId();
-                    //删除掉这行记录
-                    vipService.deleteVip(id);
-                    //从流式面板移除当前这个人的布局
-                    vipPane.getChildren().remove(hBox);
-                }
-            });
-        }
-    }
 
 
 

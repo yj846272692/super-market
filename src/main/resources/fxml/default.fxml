@@ -51,13 +51,11 @@
     <Button  AnchorPane.rightAnchor="640" AnchorPane.bottomAnchor="300" text="添加类别" onAction="#addType" styleClass="gray-theme ,btn-radius-large"/>
     <Button  AnchorPane.rightAnchor="500" AnchorPane.bottomAnchor="300" styleClass="btn-radius-large,gray-theme " text="添加商品" onAction="#newGoodsStage"/>
 
+<ImageView fx:id="11" fitWidth="270" fitHeight="270" AnchorPane.rightAnchor="470" AnchorPane.bottomAnchor="0">
+    <Image url="/img/HUAJI.png"/>
+</ImageView>
 
 
-
-    <FlowPane fx:id="vipPane" hgap="10" vgap="10"
-              AnchorPane.topAnchor="50"
-              AnchorPane.leftAnchor="10"
-              AnchorPane.rightAnchor="10"/>
 
 
 

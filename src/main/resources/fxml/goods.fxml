@@ -10,9 +10,9 @@
     <HBox alignment="BOTTOM_CENTER" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10" spacing="10">
     </HBox>
     <HBox alignment="CENTER" AnchorPane.topAnchor="60" AnchorPane.leftAnchor="10" spacing="10">
-        <ComboBox promptText="选择商品类别" fx:id="typeComboBox" prefWidth="400"/>
-        <TextField promptText="请输入关键词" fx:id="keywordsField" AnchorPane.leftAnchor="800"/>
-        <Button styleClass="btn-basic,btn-radius-normal,green-theme,btn-radius-large" text="搜索" onAction="#search" fx:id="09"/>
+        <ComboBox promptText="选择商品类别" fx:id="typeComboBox" prefWidth="400" styleClass="gray-theme"/>
+        <TextField promptText="请输入关键词"  styleClass="gray-theme" fx:id="keywordsField" AnchorPane.leftAnchor="800"/>
+        <Button styleClass="btn-basic,btn-radius-normal,gray-theme,btn-radius-large" text="搜索" onAction="#search" fx:id="09"/>
     </HBox>
     <TableView fx:id="goodsTable" prefWidth="1500" prefHeight="700"
                AnchorPane.topAnchor="110" AnchorPane.leftAnchor="10">

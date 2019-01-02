@@ -132,14 +132,15 @@ public class VipController implements Initializable {
             hBox.setSpacing(30);
             // 垂直盒子
             VBox rightBox = new VBox();
-            rightBox.setSpacing(15);
+            rightBox.setSpacing(10);
             Label nameLabel = new Label(vip.getName());
             nameLabel.getStyleClass().add("font-title");
             Label sexLabel = new Label(vip.getSex());
             Label mobileLabel = new Label(vip.getMobile());
             Label numberLabel = new Label(vip.getVipNumber());
             Button delBtn = new Button("删除");
-            delBtn.getStyleClass().add("warning-theme");
+            delBtn.getStyleClass().add("gray-theme");
+            delBtn.setAlignment(Pos.BOTTOM_CENTER);
             rightBox.getChildren().addAll(nameLabel, sexLabel, mobileLabel,numberLabel,delBtn);
             hBox.getChildren().addAll(rightBox);
             vipPane.getChildren().add(hBox);

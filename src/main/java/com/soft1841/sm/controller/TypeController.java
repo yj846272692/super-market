@@ -48,7 +48,7 @@ public class TypeController implements Initializable {
         //在表格最后加入删除按钮
         delCol.setCellValueFactory(param -> new ReadOnlyObjectWrapper<>(param.getValue()));
         delCol.setCellFactory(param -> new TableCell<Type, Type>() {
-            private final Button deleteButton = ComponentUtil.getButton("删除", "warning-theme");
+            private final Button deleteButton = ComponentUtil.getButton("删除", "gray-theme");
             @Override
             protected void updateItem(Type type, boolean empty) {
                 super.updateItem(type, empty);
